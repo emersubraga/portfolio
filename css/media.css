@@ -1,5 +1,45 @@
 @media screen and (max-width: 990px){
 
+    .inicio {
+        display: flex;
+        flex-direction: row;
+        border-top: 0.4px solid #1f9dff;
+    }
     
+    .inicio .componentes-inicio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    .inicio .componentes-inicio .texto-inicio {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 60px;
+    }
+    
+    .inicio .componentes-inicio .texto-inicio h1{
+        font-size: 15px;
+    }
+    
+    .inicio .componentes-inicio .texto-inicio h3{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .inicio .componentes-inicio .texto-inicio p {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .inicio .componentes-inicio .texto-inicio .redes-sociais a i{
+        font-size: 15px;
+    }
+    
+    .inicio .componentes-inicio .image img {
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
 
 }
