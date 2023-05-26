@@ -17,6 +17,10 @@
         text-align: center;
         margin-left: 60px;
     }
+
+    .inicio .componentes-inicio .texto-inicio h2{
+        font-size: 13px;
+    }
     
     .inicio .componentes-inicio .texto-inicio h1{
         font-size: 15px;
@@ -28,7 +32,7 @@
     }
     
     .inicio .componentes-inicio .texto-inicio p {
-        font-size: 10px;
+        font-size: 11px;
         margin-bottom: 10px;
     }
     
@@ -39,7 +43,141 @@
     .inicio .componentes-inicio .image img {
         width: 50%;
         margin-top: 40px;
-        margin-left: 10px;
+        margin-left: 150px;
     }
 
+    .sobre .componentes-sobre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre .componentes-sobre .texto-sobre{
+        margin-left: 40px;
+    }
+
+    .sobre .componentes-sobre .texto-sobre p {
+        text-align: justify;
+        width: 90%;
+    }
+
+    .sobre .componentes-sobre .img-sobre {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico{
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .texto-tecnico h2{
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .texto-tecnico h3{
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .texto-tecnico p{
+        text-align: justify;
+        width: 82%;
+        margin-left: 40px;
+        margin-bottom: 100px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .img-tecnico {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi{
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .texto-tsi h2{
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .texto-tsi h3{
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .texto-tsi p{
+        text-align: justify;
+        width: 82%;
+        margin-left: 40px;
+        margin-bottom: 80px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .img-tsi {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .tecnologias .componentes-tecnologias {
+        margin-top: 100px;
+    }
+
+    .tecnologias .componentes-tecnologias h2{
+        margin-left: 40px;
+    }
+
+    .tecnologias .componentes-tecnologias ul li {
+        margin: 10px;
+    }
+
+    .tecnologias .componentes-tecnologias ul li i{
+        font-size: 30px;
+    }
+
+    .projetos h2{
+        margin-left: 40px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .projetos .card-projetos-row .card-projetos{
+        width: 85%;
+    }
+
+    .contato h2{
+        margin-left: 40px;
+    }
+
+    .componentes-contato {
+        flex-direction: column;
+    }
+
+    .texto-contato {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .texto-contato p{
+        text-align: center;
+    }
+
+    .contatos {
+        margin-right: 0;
+    }
+    
+    .contatos ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .contatos ul li{
+        
+        
+    }
+    
+    .contatos ul li i{
+        color: #1f9dff;
+        font-size: 15px;
+        margin-right: 2px;
+    }
+    
 }
