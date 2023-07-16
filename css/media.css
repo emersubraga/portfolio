@@ -8,6 +8,10 @@
         height: 40px;
         right: 200px;
     }
+    
+    .scrollTop:hover{
+        background-color: #1f9dff;
+    }
 
     nav .logo{
         line-height: 10px;
