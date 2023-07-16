@@ -164,10 +164,10 @@ transition: 0.3s;
     display: flex;
     margin-top: 195px;
 }
-
+ 
 .inicio .componentes-inicio .texto-inicio {
+    display: flex;
     flex-direction: column;
-    margin-right: 225px;
     margin-left: 110px;
 }
 
@@ -203,9 +203,11 @@ transition: 0.3s;
     color: #fff;
 }
 
-.inicio .componentes-inicio .image img {
-    width: 150%;
-    margin-top: -90px;
+.inicio .componentes-inicio .image{
+    width: 450px;
+    margin-top: -120px;
+    margin-left: 206px;
+    filter: drop-shadow(0px 2px 0px #1f9dff);
 }
 
 .sobre{
@@ -421,6 +423,7 @@ transition: 0.3s;
 .projetos .card-projetos-row .card-projetos .componentes-projetos ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .projetos .card-projetos-row .card-projetos .componentes-projetos ul li{
