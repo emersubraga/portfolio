@@ -65,12 +65,20 @@ body {
     width: 50%;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #0f0f0f;
     height: 10vh;
+    border-bottom: 0.4px solid #1f9dff;
 }
 
 nav .logo{
@@ -157,18 +165,20 @@ transition: 0.3s;
 .inicio {
     display: flex;
     flex-direction: row;
-    border-top: 0.4px solid #1f9dff;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .inicio .componentes-inicio {
     display: flex;
-    margin-top: 195px;
+    justify-content: space-around;
+    width: 100%;
 }
- 
+
 .inicio .componentes-inicio .texto-inicio {
     display: flex;
     flex-direction: column;
-    margin-left: 110px;
+    justify-content: center;
 }
 
 .inicio .componentes-inicio .texto-inicio h1{
@@ -189,40 +199,47 @@ transition: 0.3s;
 }
 
 .inicio .componentes-inicio .texto-inicio .redes-sociais {
-   flex-direction: row;
-   justify-content: center;
-}
+    flex-direction: row;
+    justify-content: center;
+ }
+ 
+ .inicio .componentes-inicio .texto-inicio .redes-sociais a i{
+     color: #1f9dff;
+     font-size: 23px;
+     margin: 2px;
+ }
 
-.inicio .componentes-inicio .texto-inicio .redes-sociais a i{
-    color: #1f9dff;
-    font-size: 23px;
-    margin: 2px;
-}
-
-.inicio .componentes-inicio .texto-inicio .redes-sociais a i:hover{
+ .inicio .componentes-inicio .texto-inicio .redes-sociais a i:hover{
     color: #fff;
 }
 
 .inicio .componentes-inicio .image{
+    display: flex;
+    justify-content: center;
     width: 450px;
-    margin-top: -120px;
-    margin-left: 206px;
+    filter: drop-shadow(0px 2px 0px #1f9dff);
 }
 
 .sobre{
     display: flex;
     flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .sobre .componentes-sobre{
     display: flex;
-    margin-top: 150px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .sobre .componentes-sobre .texto-sobre{
+    display: flex;
     flex-direction: column;
-    margin-top: 60px;
-    margin-left: 110px;
+    justify-content: center;
+    padding: 10px;
+    width: 450px; 
 }
 
 .sobre .componentes-sobre .texto-sobre span{
@@ -231,75 +248,96 @@ transition: 0.3s;
 
 .sobre .componentes-sobre .texto-sobre p {
     text-align: justify;
-    width: 70%;
-    margin-top: 15px;
+    width: auto;
+    
 }
 
 .sobre .componentes-sobre .img-sobre {
-    width: 70%;
-    margin-top: -40px;
-    margin-right: 170px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
     filter: drop-shadow(0px 2px 0px #1f9dff);
 }
 
 .formacao{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .formacao .componentes-formacao{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
 }
 
 .formacao .componentes-formacao .formacao-tecnico{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .formacao .componentes-formacao .formacao-tecnico .texto-tecnico{
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    width: 450px;
 }
+
 .formacao .componentes-formacao .formacao-tecnico .texto-tecnico h2{
-    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 .formacao .componentes-formacao .formacao-tecnico .texto-tecnico h3{
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
-    margin-left: 150px;
+    align-items: start;
 }
 
 .formacao .componentes-formacao .formacao-tecnico .texto-tecnico span{
+    display: flex;
+    justify-content: center;
     color: #1f9dff;
 }
 
 .formacao .componentes-formacao .formacao-tecnico .texto-tecnico p{
     text-align: justify;
-    width: 70%;
-    margin-top: 8px;
-    margin-left: 150px;
+    width: auto;
+    margin-top: 10px;
 }
 
 .formacao .componentes-formacao .formacao-tecnico .img-tecnico {
-    width: 70%;
-    margin-top: -40px;
-    margin-left: 110px;
-    filter: drop-shadow(0px 8px 0px #1f9dff);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    filter: drop-shadow(0px 2px 0px #1f9dff);
 }
 
 .formacao .componentes-formacao .formacao-tsi{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .formacao .componentes-formacao .formacao-tsi .texto-tsi{
-    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    width: 450px;
 }
 
 .formacao .componentes-formacao .formacao-tsi .texto-tsi h3{
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
-    margin-left: 110px;
+    align-items: start;
 }
 
 .formacao .componentes-formacao .formacao-tsi .texto-tsi span{
@@ -308,16 +346,15 @@ transition: 0.3s;
 
 .formacao .componentes-formacao .formacao-tsi .texto-tsi p {
     text-align: justify;
-    width: 70%;
-    margin-top: 8px;
-    margin-left: 110px;
+    width: auto;
+    margin-top: 10px;
 }
 
 .formacao .formacao-tsi .img-tsi {
-    width: 70%;
-    margin-top: -40px;
-    margin-right: 120px;
-    filter: drop-shadow(0px 6px 0px #1f9dff);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    filter: drop-shadow(0px 2px 0px #1f9dff);
 }
 
 .tecnologias .componentes-tecnologias {
@@ -508,3 +545,5 @@ footer p{
     font-size: 13px;
     font-style: italic;
 }
+
+

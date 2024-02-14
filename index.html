@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Emerson Braga</title>
 
@@ -44,7 +45,7 @@
         </nav>
     </header>
 
-    <section class="inicio" id="inicio">
+    <section class="inicio hidden" id="inicio">
         <div class="componentes-inicio">
             <div class="texto-inicio">
                 <h2>Olá meus amigos, </h2>
@@ -55,7 +56,7 @@
 
                 <div class="redes-sociais">
                     <a href="https://www.instagram.com/emersu.jpg/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/emerson-braga-69a3801aa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/emersonviniciusbraga/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/emersonviniciusbraga" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
@@ -66,7 +67,7 @@
         
     </section>
 
-    <section class="sobre" id="sobre">
+    <section class="sobre hidden" id="sobre">
         <div class="componentes-sobre">
             <div class="texto-sobre">
                 <h2><span>|</span> Sobre mim</h2>
@@ -84,7 +85,7 @@
         </div>
         
     </section>
-    <section class="formacao" id="formacao">
+    <section class="formacao hidden" id="formacao">
         <div class="componentes-formacao">
             <div class="formacao-tecnico">
                 <div class="img-tecnico">
@@ -114,7 +115,7 @@
         </div>
     
     </section>
-    <section class="tecnologias" id="tecnologias">
+    <section class="tecnologias hidden" id="tecnologias">
         <div class="componentes-tecnologias">
             <h2><span>|</span> Tecnologias que uso/estudo</h2>
             <ul>
@@ -130,7 +131,7 @@
             </ul>
         </div>     
     </section>
-    <section class="projetos" id="projetos">
+    <section class="projetos hidden" id="projetos">
         <h2><span>|</span> Meus Projetos</h2>
         <div class="card-projetos-row">
             <div class="card-projetos">
@@ -230,6 +231,26 @@
                 behavior: 'smooth'
             })
         }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            ScrollReveal().reveal('.hidden', {
+                delay: 200,
+                duration: 600,
+                easing: 'ease-in-out',
+                reset: true
+            });
+
+            document.querySelectorAll('.hidden').forEach(function (element) {
+                element.classList.add('hidden');
+            });
+
+            document.addEventListener('scrollReveal:after_reset', function (e) {
+                if (e.detail.target) {
+                    e.detail.target.classList.remove('hidden');
+                }
+            });
+        });
     </script>
 
     <script src="js/mobile-navbar.js"></script>
