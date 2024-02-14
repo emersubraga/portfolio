@@ -1,0 +1,207 @@
+@media (max-width: 944px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .scrollTop {
+        width: 40px;
+        height: 40px;
+        right: 200px;
+    }
+    
+    .scrollTop:hover{
+        background-color: #1f9dff;
+    }
+
+    nav .logo{
+        line-height: 10px;
+        margin: -10px;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #0f0f0f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+    
+    .inicio .componentes-inicio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .inicio .componentes-inicio .texto-inicio {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .inicio .componentes-inicio .texto-inicio h1{
+        color: #fff;
+        font-size: 30px;
+        font-family: "Roboto";
+        margin-bottom: 3;
+    }
+
+    .inicio .componentes-inicio .image{
+        width: 70%;
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+
+    .sobre .componentes-sobre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre .componentes-sobre .texto-sobre{
+        margin-left: 40px;
+    }
+
+    .sobre .componentes-sobre .texto-sobre p {
+        text-align: justify;
+        width: 90%;
+    }
+
+    .sobre .componentes-sobre .img-sobre {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico{
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .texto-tecnico h2{
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .texto-tecnico h3{
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .texto-tecnico p{
+        text-align: justify;
+        width: 82%;
+        margin-left: 40px;
+        margin-bottom: 100px;
+    }
+
+    .formacao .componentes-formacao .formacao-tecnico .img-tecnico {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi{
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .texto-tsi h2{
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .texto-tsi h3{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 40px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .texto-tsi p{
+        text-align: justify;
+        width: 82%;
+        margin-left: 40px;
+        margin-bottom: 80px;
+    }
+
+    .formacao .componentes-formacao .formacao-tsi .img-tsi {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .tecnologias .componentes-tecnologias {
+        margin-top: 100px;
+    }
+
+    .tecnologias .componentes-tecnologias h2{
+        margin-left: 40px;
+    }
+
+    .tecnologias .componentes-tecnologias ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .tecnologias .componentes-tecnologias ul li {
+        margin: 10px;
+    }
+
+    .tecnologias .componentes-tecnologias ul li i{
+        font-size: 30px;
+    }
+
+    .projetos h2{
+        margin-left: 40px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .projetos .card-projetos-row .card-projetos{
+        width: 85%;
+    }
+
+    .contato h2{
+        margin-left: 40px;
+    }
+
+    .componentes-contato {
+        flex-direction: column;
+    }
+
+    .texto-contato {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .texto-contato p{
+        text-align: center;
+    }
+
+    .contatos {
+        margin-right: 0;
+    }
+    
+    .contatos ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .contatos ul li i{
+        color: #1f9dff;
+        font-size: 15px;
+        margin-right: 2px;
+    }
+    
+}
