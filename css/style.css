@@ -216,8 +216,11 @@ transition: 0.3s;
 .inicio .componentes-inicio .image{
     display: flex;
     justify-content: center;
-    width: 450px;
     filter: drop-shadow(0px 2px 0px #1f9dff);
+}
+
+.inicio .componentes-inicio .image img{
+    width: 150%
 }
 
 .sobre{
@@ -255,8 +258,11 @@ transition: 0.3s;
 .sobre .componentes-sobre .img-sobre {
     display: flex;
     justify-content: center;
-    width: 500px;
     filter: drop-shadow(0px 2px 0px #1f9dff);
+}
+
+.sobre .componentes-sobre .img-sobre img{
+    width: 150%;
 }
 
 .formacao{
@@ -314,8 +320,11 @@ transition: 0.3s;
 .formacao .componentes-formacao .formacao-tecnico .img-tecnico {
     display: flex;
     justify-content: center;
-    width: 400px;
     filter: drop-shadow(0px 2px 0px #1f9dff);
+}
+
+.formacao .componentes-formacao .formacao-tecnico .img-tecnico img{
+    width: 150%;
 }
 
 .formacao .componentes-formacao .formacao-tsi{
@@ -353,8 +362,11 @@ transition: 0.3s;
 .formacao .formacao-tsi .img-tsi {
     display: flex;
     justify-content: center;
-    width: 400px;
     filter: drop-shadow(0px 2px 0px #1f9dff);
+}
+
+.formacao .formacao-tsi .img-tsi img{
+    width: 150%;
 }
 
 .tecnologias .componentes-tecnologias {
