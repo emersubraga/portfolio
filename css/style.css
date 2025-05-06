@@ -558,4 +558,9 @@ footer p{
     font-style: italic;
 }
 
-
+#spotify-player {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 9999;
+}
